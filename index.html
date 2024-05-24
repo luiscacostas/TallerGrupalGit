@@ -2,22 +2,22 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Formulario interactivo</title>
+    <title>Ejercicio login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <header>
-    <h1>Formulario interactivo</h1>
+    <h1>LOG IN</h1>
 </header>
 <body>
-    <form id="formulario" action="enviar_formulario.php" method="get">
+    <form id="formulario" action="" method="get">
             <label for="usuario">Usuario:</label>
-            <input type="text" id="usuario" name="usuario">
+            <input type="text" id="usuario" name="usuario" placeholder="Pepito Grillo">
 
             <label for="password">Contraseña:</label>
-            <input type="text" id="password" name="password">
+            <input type="password" id="password" name="password" placeholder="*********">
 
             <input type="submit" placeholder="Enviar" id="enviar">
-            <input type="submit" placeholder="Registrarse" id="registrarse">
+            <input type="submit" placeholder="Registrarse" id="registrarse" value="Registrarse">
     </form>
     <script src="javascript.js"></script>
 </body>
