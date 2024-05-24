@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario interactivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <h1>Formulario interactivo</h1>
+</header>
+<body>
+    <form id="formulario" action="enviar_formulario.php" method="get">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario">
+
+            <label for="password">Contraseña:</label>
+            <input type="text" id="password" name="password">
+
+            <input type="submit" placeholder="Enviar" id="enviar">
+            <input type="submit" placeholder="Registrarse" id="registrarse">
+    </form>
+    <script src="javascript.js"></script>
+</body>
+</html>
