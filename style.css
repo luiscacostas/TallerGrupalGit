@@ -1,0 +1,79 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: x-large;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#myForm {
+    display: block;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 0.5cap;
+}
+
+#myForm label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+
+#submit {
+    display: block;
+    margin-top: 15px;
+    width: 100%;
+    height: 30px;
+    font-size: medium;
+    color: white;
+    background-color: #006dda;
+    border: none;
+    border-radius: 0.5cap;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    h1 {
+        text-align: left;
+        margin-left: -20px;
+    }
+
+    #myForm label {
+        text-align: left;
+        margin-left: -20px;
+    }
+
+    #submit {
+        width: max-content;
+    }
+}
+
+@media (min-width: 900px) {
+    h1 {
+        text-align: left;
+        margin-left: -20px;
+    }
+
+    #myForm label {
+        text-align: left;
+        margin-left: -20px;
+    }
+
+    #submit {
+        width: max-content;
+    }
+}
