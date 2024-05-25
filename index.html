@@ -1,24 +1,30 @@
-<!DOCTYPE html>
-<html lang="es">
+
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ejercicio login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Git</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <h1>LOG IN</h1>
-</header>
 <body>
-    <form id="formulario" action="" method="get">
-            <label for="usuario">Usuario:</label>
-            <input type="text" id="usuario" name="usuario" placeholder="Pepito Grillo">
+    <header>
 
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" placeholder="*********">
+    </header>
+    <main>
+        <h1>Regístrate 👉</h1>
+        <form id="myForm" action="" method="post">
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="usuario">
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="Año" id="contraseña">
+            <button id="submit" type="submit">Enviar Consulta</button>
+            <ul id="listaErrores">
+            </ul>
+        </form>
+    </main>
+    <footer>
 
-            <input type="submit" placeholder="Enviar" id="enviar">
-            <input type="submit" placeholder="Registrarse" id="registrarse" value="Registrarse">
-    </form>
-    <script src="javascript.js"></script>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
