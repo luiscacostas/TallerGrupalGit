@@ -1,46 +1,8 @@
-
-const formulario = document.querySelector('#formulario')
-
-let usuario = [
-    {
-    id: 1,
-    nombre: 'Luis Carlos',
-    password: '123456789'
-    },
-    {
-        id: 2,
-        nombre: 'Jose Antonio',
-        password: '00000000'
-    },
-    {
-        id: 3,
-        nombre: 'Jose Antonio',
-        password: 'abcdefg'
-    }
-];
-const expreReg = {
-    usuario: /^[a-zA-Z0-9.,':!?-]+$/,
-    password: /(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}/
-    
-}
-
-formulario.addEventListener('submit',(ev)=>{
-    ev.preventDefault();
-})
-
-
-
-=======
 //validar usuario y contraseña
-
 document.addEventListener('DOMContentLoaded', () => {
-
 // VARIABLES
-
 const listaErrores = document.querySelector('#listaErrores');
 const myForm = document.querySelector('#myForm');
-
-
 const usuariosRegistrados = [
     {
         usuarioRegistrado: 'Emilio',
@@ -55,9 +17,7 @@ const usuariosRegistrados = [
         contraseñaRegistrada: 'passwordLuis3',
     }
 ];
-
 // EVENTOS
-
 myForm.addEventListener('submit',(event)=>{
     event.preventDefault();
     const usuario = myForm.usuario.value;
@@ -65,26 +25,19 @@ myForm.addEventListener('submit',(event)=>{
     validarUsuario(usuario, contraseña);
     validarUsuarioRegistrado(usuario, contraseña);
 });
-
-
 // FUNCIONES
-
 const validarUsuario =(usuario, contraseña)=> {
-    
     let errores = '';
-    
     if (usuario == '') {
         errores += '<li>El Usuario es obligatorio</li>';
     } else if (!/[a-zA-Z\s]{3,}/.test(usuario)) {
         errores += '<li>El Usuario debe contener caracteres alfanuméricos</li>';
     };
-    
     if (contraseña == '') {
         errores += '<li>La Contraseña es obligatoria</li>';
     } else if (!/(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}/.test(contraseña)) {
         errores += '<li>La Contraseña debe contener al menos una minúsucla, una mayúsucla y un número.</li>';
     };
-    
     if (errores != '') {
         listaErrores.innerHTML=errores
     } else {
@@ -92,17 +45,14 @@ const validarUsuario =(usuario, contraseña)=> {
         myForm.reset();
     };
 };
-
 const validarUsuarioRegistrado = (usuario, contraseña) => {
     const usuarioValido = usuariosRegistrados.some(({usuarioRegistrado, contraseñaRegistrada}) => {
         return usuario === usuarioRegistrado && contraseña === contraseñaRegistrada;
     });
-
     if (usuarioValido) {
         console.log('Usuario y contraseña válidos');
     } else {
         console.log('Usuario o contraseña incorrectos');
     }
 };
-
 });
