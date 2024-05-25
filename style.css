@@ -1,3 +1,147 @@
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: grey;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"]{
+    width: 380px;
+    padding: 10px;
+    padding-right: 0px;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    width: 200px;
+    padding: 10px;
+    padding-right: 0px;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+input[type="submit"] {
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Para cuando al poner el cursor encima cambie de color */
+input[type="submit"]:hover {
+    background-color: purple;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+        width: 90%;
+    }
+
+    input[type="text"],
+    input[type="password"]{
+        width: 380px;
+        padding: 10px;
+        padding-right: 0px;
+        margin-bottom: 10px;
+        border: 1px solid grey;
+        border-radius: 4px;
+}
+    input[type="submit"] {
+        padding: 8px;
+        padding-right: 0px;
+        font-size: 16px;
+        width: 400px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    form {
+        padding: 20px;
+        width: 80%;
+    }
+
+    input[type="text"],
+    input[type="password"]{
+        width: 380px;
+        padding: 10px;
+        padding-right: 0px;
+        margin-bottom: 10px;
+        border: 1px solid grey;
+        border-radius: 4px;
+    }
+    input[type="submit"] {
+        padding: 10px;
+        padding-right: 0px;
+        font-size: 18px;
+        width: 400px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1201px) {
+    form {
+        padding: 20px;
+        width: 50%;
+    }
+
+    input[type="text"],
+    input[type="password"]{
+        width: 380px;
+        padding: 10px;
+        padding-right: 0px;
+        margin-bottom: 10px;
+        border: 1px solid grey;
+        border-radius: 4px;
+    }
+    input[type="submit"] {
+        padding: 12px;
+        padding-right: 0px;
+        font-size: 20px;
+        width: 400px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+=======
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 0px 20px;

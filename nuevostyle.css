@@ -1,0 +1,20 @@
+.contenedor{
+    width: 100%;
+    max-width:1200px;
+    margin: 0 auto;
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+}
+label, input{
+    height: 25px;
+}
+
+.boton{
+    margin-top: 10px;
+    background-color: blueviolet;
+    color: white;
+    height: 30px;
+    cursor: pointer;
+}
